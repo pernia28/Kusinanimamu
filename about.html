@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mamu | Kusina ni Mamu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="kusina ni mamu.css">
+</head>
+<body class="mamu-body" data-page="about">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="kusina ni mamu.html" class="brand-link">
+                <span class="brand-logo-box mamu-card-shadow">
+                    <svg viewBox="0 0 120 120" class="svg-full" aria-label="Kusina ni Mamu">
+                        <rect width="120" height="120" fill="#FFC814" />
+                        <text x="60" y="24" text-anchor="middle" fill="#111111" font-family="Outfit, sans-serif" font-weight="900" font-size="12" letter-spacing="1">KUSINA NI</text>
+                        <ellipse cx="60" cy="40" rx="12" ry="8" fill="#111111" />
+                        <path d="M 32,62 C 32,45 88,45 88,62 L 83,70 C 71,62 49,62 37,70 Z" fill="#111111" />
+                        <circle cx="46" cy="76" r="10" fill="none" stroke="#111111" stroke-width="4.5" />
+                        <circle cx="74" cy="76" r="10" fill="none" stroke="#111111" stroke-width="4.5" />
+                        <line x1="56" y1="75" x2="64" y2="75" stroke="#111111" stroke-width="4.5" stroke-linecap="round" />
+                        <path d="M 52,90 Q 60,96 68,90" fill="none" stroke="#111111" stroke-width="4.5" stroke-linecap="round" />
+                    </svg>
+                </span>
+                <span class="brand-text">
+                    <span class="brand-kicker">Kusina ni</span>
+                    <span class="brand-name font-display">MAMU</span>
+                </span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="kusina ni mamu.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="party-trays.html">Party Trays</a>
+                <a href="about.html" class="active-nav">About Mamu</a>
+                <a href="social.html">Social</a>
+            </nav>
+
+            <div class="header-actions">
+                <div id="authHeaderArea"></div>
+                <button type="button" onclick="toggleCart()" class="btn-tray mamu-card-shadow">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span>Tray</span>
+                    <span id="cartBadge" class="tray-badge">0</span>
+                </button>
+                <button type="button" onclick="toggleMobileMenu()" class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="mobile-menu hidden">
+            <a href="kusina ni mamu.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="party-trays.html">Party Trays</a>
+            <a href="about.html">About Mamu</a>
+            <a href="social.html">Social</a>
+        </div>
+    </header>
+
+    <section class="about-mamu-section">
+        <div class="container">
+            <div class="about-mamu-box mamu-card-shadow-lg">
+                <div class="about-mamu-header">
+                    <span class="section-pill">About Mamu</span>
+                    <h1 class="about-mamu-main-title font-display">MAMU</h1>
+                    <p class="about-mamu-tagline">A Taste of Filipino Heritage Abroad</p>
+                </div>
+
+                <div class="about-mamu-grid">
+                    <div class="about-mamu-story">
+                        <p>
+                            Founded by Chef Reinier, a celebrated chef with over 27 years of culinary expertise, MAMU is more than just a food business; it’s a tribute to Filipino heritage, family, and the comfort of home-cooked meals. The story of MAMU started in Quezon City, Philippines, where Chef Reinier’s grandmother, lovingly called "Mamu," began a humble household business. With passion and perseverance, she grew it into one of the top canteens in the area, inspiring Chef Reinier to pursue his culinary dreams. Deeply rooted in Filipino culture, where hospitality and warmth are central values, MAMU aims to provide an unmatched homegrown food experience for Filipinos abroad, particularly those in the Middle East.
+                        </p>
+                        <p>
+                            In 2017, Chef Reinier brought MAMU to Doha, introducing “Kabayan Nights,” a special offering for Filipinos working far from home. Through dishes that evoke memories of the Philippines, MAMU brings comfort and familiarity to the Filipino community, offering an affordable, “home away from home” experience with every bite.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="about-mamu-photo-frame mamu-card-shadow">
+                            <img src="images/mamu-story.jpg" alt="Mamu — A Taste of Filipino Heritage Abroad" class="about-mamu-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display:none; width:100%; height:100%; align-items:center; justify-content:center; flex-direction:column; padding:16px; text-align:center; font-weight:900;">
+                                <span>KUSINA NI MAMU</span>
+                                <small style="margin-top:6px; font-weight:700;">Add images/mamu-story.jpg</small>
+                            </div>
+                        </div>
+                        <blockquote class="about-mamu-quote">
+                            With a dedication to elevating Filipino cuisine and connecting Filipinos with their heritage, MAMU has become a cherished name, embodying Filipino hospitality and culinary tradition in every dish.
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="authModal" class="modal-backdrop hidden">
+        <div class="modal-card mamu-card-shadow-lg">
+            <div class="modal-header">
+                <div>
+                    <h3 id="authModalTitle" class="modal-title font-display">Kabayan Log In</h3>
+                    <p class="modal-sub">Kusina ni Mamu Account</p>
+                </div>
+                <button type="button" onclick="closeAuthModal()" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="auth-tabs">
+                <button type="button" id="tabLoginBtn" onclick="switchAuthTab('login')" class="auth-tab active-tab">Log In</button>
+                <button type="button" id="tabSignupBtn" onclick="switchAuthTab('signup')" class="auth-tab">Sign Up</button>
+            </div>
+            <div id="authNotice" class="auth-notice hidden">
+                <i class="fa-solid fa-circle-info"></i>
+                <span id="authNoticeText"></span>
+            </div>
+            <form id="loginForm" onsubmit="handleLogin(event)" class="modal-form">
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" id="loginEmail" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" id="loginPassword" required class="form-input">
+                </div>
+                <button type="submit" class="btn-submit-dark mamu-card-shadow">Log In</button>
+            </form>
+            <form id="signupForm" onsubmit="handleSignup(event)" class="modal-form hidden">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" id="signupName" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" id="signupEmail" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" id="signupPhone" placeholder="+971 50 123 4567" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">UAE Delivery Address</label>
+                    <input type="text" id="signupAddress" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" id="signupPassword" required class="form-input">
+                </div>
+                <button type="submit" class="btn-submit-yellow mamu-card-shadow">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cartOverlay" onclick="toggleCart()" class="cart-overlay hidden"></div>
+    <aside id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <div class="cart-header-left">
+                <div class="cart-icon-box"><i class="fa-solid fa-basket-shopping"></i></div>
+                <div>
+                    <h3 class="cart-title font-display">Your Tray</h3>
+                    <p id="cartUserGreeting" class="cart-sub">Kusina ni Mamu UAE</p>
+                </div>
+            </div>
+            <button type="button" onclick="toggleCart()" class="modal-close-btn">&times;</button>
+        </div>
+        <div id="cartItemsContainer" class="cart-items"></div>
+        <div id="cartFooter" class="cart-footer hidden">
+            <div class="form-group">
+                <label class="form-label">Delivery Address</label>
+                <input type="text" id="custAddress" placeholder="Building, Street, Area (UAE)" class="form-input">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Payment Method</label>
+                <select id="custPaymentMethod" onchange="updatePaymentInfo()" class="form-input">
+                    <option value="Cash on Delivery (AED)">Cash on Delivery (AED)</option>
+                    <option value="Card on Delivery">Card on Delivery</option>
+                    <option value="Bank Transfer / UAE Transfer">Bank Transfer / UAE Transfer</option>
+                </select>
+                <p id="paymentMethodNote" style="font-size: 12px; font-weight: 700; margin-top: 6px; background: #FFEC99; padding: 8px 10px; border-radius: 8px; border: 1.5px solid #111111;">
+                    Pay with AED cash directly to the rider upon delivery.
+                </p>
+            </div>
+            <div class="cart-total-row">
+                <span class="cart-total-label">Total</span>
+                <div class="text-right">
+                    <span id="cartTotalPrice" class="cart-total-aed font-display">AED 0.00</span>
+                    <span id="cartTotalPricePhp" class="price-php">≈ ₱0.00 PHP</span>
+                </div>
+            </div>
+            <button type="button" onclick="placeOrder()" class="btn-submit-dark mamu-card-shadow">
+                <i class="fa-solid fa-check"></i> Place Order
+            </button>
+        </div>
+    </aside>
+
+    <div id="orderSuccessModal" class="modal-backdrop hidden">
+        <div class="modal-card mamu-card-shadow-lg">
+            <div class="modal-header">
+                <div>
+                    <h3 class="modal-title font-display">Order Placed!</h3>
+                    <p class="modal-sub">Kusina ni Mamu UAE</p>
+                </div>
+                <button type="button" onclick="closeOrderSuccessModal()" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body" style="text-align: center;">
+                <div class="order-confirm-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <h4 class="font-display" style="font-size: 22px; margin-bottom: 10px;">Maraming Salamat!</h4>
+                <p style="font-size: 14px; font-weight: 600; margin-bottom: 14px;">Your order has been successfully placed and is now being prepared.</p>
+                <div id="orderSuccessDetails" class="order-confirm-box"></div>
+                <button type="button" onclick="closeOrderSuccessModal()" class="btn-submit-yellow mamu-card-shadow">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <span>&copy; 2026 Kusina ni Mamu UAE.</span>
+            <span>Lutong Bahay na May Pagmamahal 🇵🇭</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
